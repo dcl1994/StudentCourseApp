@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@drawable/phone"
+            android:title="打电话"
+            />
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/chat"
+            android:title="聊天"
+            />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/camera"
+            android:title="拍照"
+            />
+        <item
+            android:id="@+id/nav_select"
+            android:icon="@drawable/search"
+            android:title="搜索"
+            />
+    </group>
+
+</menu>

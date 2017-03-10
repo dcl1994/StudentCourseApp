@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StudentCourseApp</string>
+    <string name="action_settings">设置</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="title_alert">提示</string>
+    <string name="content">用户名或密码错误，请重新登录或注册!</string>
+
+</resources>

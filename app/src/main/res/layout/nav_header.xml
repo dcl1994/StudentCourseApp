@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/bg"
+    android:id="@+id/head_relative">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/nav_icon"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击头像修改"
+        android:layout_below="@+id/icon_image"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/nicheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小龙"
+        android:textSize="16sp"
+        android:layout_above="@+id/username"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="8dp"
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1920972290@qq.com"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
