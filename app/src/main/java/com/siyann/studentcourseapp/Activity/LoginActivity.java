@@ -74,9 +74,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mBtnLogin = (TextView) findViewById(R.id.main_btn_login);
         progress = findViewById(R.id.layout_progress);
         mInputLayout = findViewById(R.id.input_layout);
-        mName = (LinearLayout) findViewById(R.id.input_layout_name);
-        mPsw = (LinearLayout) findViewById(R.id.input_layout_psw);
-        mView = findViewById(R.id.LineView);
+//        mName = (LinearLayout) findViewById(R.id.input_layout_name);
+//        mPsw = (LinearLayout) findViewById(R.id.input_layout_psw);
+
+        mName = (LinearLayout) findViewById(R.id.layout_username);
+        mPsw = (LinearLayout) findViewById(R.id.layout_password);
+
+//        mView = findViewById(R.id.LineView);
         mBtnLogin.setOnClickListener(this);
     }
     /**
@@ -86,13 +90,21 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
      */
     @Override
     public void onClick(View v) {
+
+        /**
+         * 登录的按钮点击后修改
+         */
+        mBtnLogin.setTextColor(getResources().getColor(R.color.bgcolor));
+        mBtnLogin.setBackgroundColor(getResources().getColor(R.color.bgcolor));
+
+
         //计算出控件的宽与高
         mWidth = mBtnLogin.getMeasuredWidth();
         mHeight = mBtnLogin.getMeasuredHeight();
         //隐藏输入框
         mName.setVisibility(View.INVISIBLE);
         mPsw.setVisibility(View.INVISIBLE);
-        mView.setVisibility(View.INVISIBLE);
+//        mView.setVisibility(View.INVISIBLE);
         inputAnimator(mInputLayout, mWidth, mHeight);
     }
 

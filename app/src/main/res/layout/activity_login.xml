@@ -45,9 +45,9 @@
         android:layout_centerInParent="true">
         <include
             android:id="@+id/input_layout"
-            layout="@layout/input_layout"
+            layout="@layout/mater_design"
             android:layout_width="match_parent"
-            android:layout_height="130dp"/>
+            android:layout_height="160dp"/>
         <include
             android:id="@+id/layout_progress"
             layout="@layout/layout_progress"
